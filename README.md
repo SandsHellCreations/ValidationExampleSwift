@@ -16,7 +16,7 @@ Variadic parameter example:-
     // returns 10.0, which is the arithmetic mean of these three numbers
 Tuple usage tutorial link: https://medium.com/swift-programming/swift-tuple-328aecff50e7
 ----------------------------------------------------------------------
-Usage Example of validation:-
+Usage Example of validation with three values
 ----------------------------------------------------------------------
     let response = Validation.shared.validate(values: (ValidationType.email, "hello@gmail.com"), (ValidationType.phoneNo, "56545654654665"), (ValidationType.stringWithFirstLetterCaps, "tyh56gf"))
         switch response {
