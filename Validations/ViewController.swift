@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let response = Validation.shared.validate(values: (ValidationType.email, "hello@gmail.com"), (ValidationType.stringWithFirstLetterCaps, "tyh56gf"))
+        switch response {
+        case .success:
+            break
+        case .failure(_, let message):
+            print(message.localized())
+        }
     }
 
     override func didReceiveMemoryWarning() {
