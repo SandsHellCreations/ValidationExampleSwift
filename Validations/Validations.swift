@@ -29,7 +29,7 @@ enum RegEx: String {
     case email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
     case password = "^.{6,15}$"
     case alphabeticStringWithSpace = "^[a-zA-Z ]*$"
-    case alphabeticString = "[A-Za-z]{1,25}"
+    case alphabeticString = "^[A-Z]+[a-zA-Z]*$"
     case phoneNo = "[0-9]{10,14}"
 }
 
